@@ -1,6 +1,6 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
-  "runArgs": ["--platform=linux/amd64" ],
+  "runArgs": ["--platform=linux/x86_64" ],
   "waitFor": "onCreateCommand",
   "onCreateCommand": ".devcontainer/setup.sh",
   "updateContentCommand": "cargo build",
