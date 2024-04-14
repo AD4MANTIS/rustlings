@@ -197,7 +197,7 @@ fn main() -> Result<()> {
 
         Subcommands::Run { name } => {
             let exercise = find_exercise(&name, &exercises);
-
+            dbg!(exercise);
             run(exercise, verbose).unwrap_or_else(|_| std::process::exit(1));
         }
 
